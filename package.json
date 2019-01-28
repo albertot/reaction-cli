@@ -4,6 +4,7 @@
   "description": "A command line tool for Reaction Commerce",
   "main": "./dist/main.js",
   "scripts": {
+    "prepare" : "npm run build",
     "build": "rimraf ./dist && babel src --out-dir ./dist",
     "lint": "eslint ./src",
     "lintfix": "eslint ./src --fix",
